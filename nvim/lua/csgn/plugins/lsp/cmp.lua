@@ -16,6 +16,31 @@ return {
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 			}),
+			window = {
+				completion = cmp.config.window.bordered({
+					border = "rounded",
+					scrollbar = false,
+					col_offset = -999,
+					side_padding = 0,
+					winhighlight = table.concat({
+						"Normal:NormalFloat",
+						"NormalFloat:NormalFloat",
+						"FloatBorder:FloatBorder",
+						"CursorLine:PmenuSel",
+						"Pmenu:Pmenu",
+						"PmenuSel:PmenuSel",
+						-- "PmenuSbar:None", -- disable scrollbar
+						"PmenuThumb:None",
+						"EndOfBuffer:None",
+						"Search:None",
+					}, ","),
+				}),
+				documentation = cmp.config.window.bordered({
+					border = "rounded",
+					scrollbar = false,
+					side_padding = 0,
+				}),
+			},
 			mapping = {
 				["<CR>"] = cmp.mapping.confirm({ select = false }),
 				["<C-e>"] = cmp.mapping.abort(),
@@ -33,4 +58,3 @@ return {
 		})
 	end,
 }
-
