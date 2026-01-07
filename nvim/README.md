@@ -11,6 +11,6 @@ $ npm install -g neovim
 ```
 
 ## requirements
+
 - https://github.com/BurntSushi/ripgrep
 - https://github.com/sharkdp/fd
-
