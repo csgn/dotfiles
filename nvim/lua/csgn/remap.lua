@@ -4,7 +4,7 @@ vim.g.maplocalleader = " "
 
 -- Diagnostics
 vim.diagnostic.config({
-  virtual_text = false,
+	virtual_text = false,
 })
 
 local opts = { noremap = true, silent = true }
@@ -15,7 +15,6 @@ local opts = { noremap = true, silent = true }
 
 -- Disable Ex mode
 vim.keymap.set("n", "Q", "<nop>", opts)
-
 
 -- Clipboard
 vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank to clipboard" })
@@ -54,3 +53,8 @@ vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Jump to end of line
 vim.keymap.set("i", "<C-e>", "<C-o>A", opts)
+
+-- vim.keymap.set("n", "<Up>", "<nop>", { silent = true })
+-- vim.keymap.set("n", "<Down>", "<nop>", { silent = true })
+-- vim.keymap.set("n", "<Left>", "<nop>", { silent = true })
+-- vim.keymap.set("n", "<Right>", "<nop>", { silent = true })
