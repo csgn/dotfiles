@@ -1,0 +1,50 @@
+return {
+    "jinh0/eyeliner.nvim",
+    dependencies = {
+        "https://github.com/rhysd/clever-f.vim"
+    },
+    lazy = true,
+    keys = {
+        "f",
+    },
+    config = function()
+        require("eyeliner").setup({
+            -- show highlights only after keypress
+            highlight_on_key = false,
+
+            -- dim all other characters if set to true (recommended!)
+            dim = true,
+
+            -- set the maximum number of characters eyeliner.nvim will check from
+            -- your current cursor position; this is useful if you are dealing with
+            -- large files: see https://github.com/jinh0/eyeliner.nvim/issues/41
+            max_length = 9999,
+
+            -- filetypes for which eyeliner should be disabled;
+            -- e.g., to disable on help files:
+            -- disabled_filetypes = {"help"}
+            disabled_filetypes = {},
+
+            -- buftypes for which eyeliner should be disabled
+            -- e.g., disabled_buftypes = {"nofile"}
+            disabled_buftypes = {},
+
+            -- add eyeliner to f/F/t/T keymaps;
+            -- see section on advanced configuration for more information
+            default_keymaps = false,
+        })
+        
+        vim.keymap.set(
+            {"n", "x", "o"},
+            "f",
+            function() 
+                require("eyeliner").highlight({ forward = true })
+                return "<Plug>(clever-f-f)"
+            end,
+            {expr = true}
+        )
+
+        vim.api.nvim_set_hl(0, 'EyelinerPrimary', { fg='#d9ff00', bold = true, underline = true })
+        vim.api.nvim_set_hl(0, 'EyelinerSecondary', { fg='#ff0aa9', underline = true })
+    end,
+}
