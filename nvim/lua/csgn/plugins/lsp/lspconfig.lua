@@ -38,6 +38,36 @@ return {
 				},
 			})
 			vim.lsp.enable("lua_ls")
+
+			-- Setup C/C++ language server
+			vim.lsp.enable("clangd")
+
+			-- Setup Python language server
+			vim.lsp.enable("pyright")
+
+			-- Setup Go language server
+			vim.lsp.enable("gopls")
+
+			-- Setup Rust language server
+			vim.lsp.config("rust_analyzer", {
+				settings = {
+					["rust-analyzer"] = {
+						diagnostics = {
+							enable = false,
+						},
+					},
+				},
+			})
+			vim.lsp.enable("rust_analyzer")
+
+			-- Setup Bash language server
+			vim.lsp.enable("bashls")
+
+			-- Setup Docker language server
+			vim.lsp.enable("docker_language_server")
+
+			-- Setup Typescript language server
+			vim.lsp.enable("ts_ls")
 		else
 			-- legacy config here
 			vim.print("Legacy lspconfig!")

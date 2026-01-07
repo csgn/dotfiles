@@ -8,6 +8,14 @@ return {
 		lint.linters_by_ft = {
 			markdown = { "vale" },
 			lua = { "luacheck" },
+			python = { "pylint" },
+			go = { "golangcilint" },
+			c = { "cpplint" },
+			cpp = { "cpplint" },
+			bash = { "shellcheck" },
+			docker = { "hadolint" },
+			ts = { "eslint" },
+			rust = { "clippy" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
