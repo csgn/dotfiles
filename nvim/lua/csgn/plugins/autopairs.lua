@@ -1,7 +1,8 @@
-return 	{
-    'windwp/nvim-autopairs',
-    lazy = true,
-    event = {"BufReadPre", "BufNewFile"},
-    config = function ()
-    end
+return {
+	"windwp/nvim-autopairs",
+	lazy = true,
+	event = { "BufReadPre", "BufNewFile" },
+	config = function()
+		require("nvim-autopairs").setup({})
+	end,
 }
