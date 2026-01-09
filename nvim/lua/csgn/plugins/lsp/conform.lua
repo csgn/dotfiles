@@ -28,6 +28,7 @@ return {
 				rust = { "rustfmt" },
 				bash = { "shfmt" },
 				docker = { "hadolint" },
+				verilog = { "verible" },
 			},
 		})
 

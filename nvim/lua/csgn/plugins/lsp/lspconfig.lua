@@ -68,6 +68,9 @@ return {
 
 			-- Setup Typescript language server
 			vim.lsp.enable("ts_ls")
+
+			-- Setup Verilog language server
+			vim.lsp.enable("verible")
 		else
 			-- legacy config here
 			vim.print("Legacy lspconfig!")
