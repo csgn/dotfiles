@@ -71,6 +71,9 @@ return {
 
 			-- Setup Verilog language server
 			vim.lsp.enable("verible")
+
+			-- Setup Markdown language server
+			vim.lsp.enable("vale_ls")
 		else
 			-- legacy config here
 			vim.print("Legacy lspconfig!")
