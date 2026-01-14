@@ -12,7 +12,7 @@ args = ["new-session"]
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/hyper.toml"
+    "./themes/themes/hyper.toml"
 ]
 
 [terminal]
