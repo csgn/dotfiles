@@ -27,8 +27,10 @@ return {
 				go = { "gofmt" },
 				rust = { "rustfmt" },
 				bash = { "shfmt" },
-				docker = { "hadolint" },
+				--docker = { "hadolint" },
 				verilog = { "verible" },
+				--glsl = { "glsl_analyzer" },
+				gdscript = { "gdformat" },
 			},
 		})
 
