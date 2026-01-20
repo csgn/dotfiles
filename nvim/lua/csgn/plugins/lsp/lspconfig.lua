@@ -73,7 +73,7 @@ return {
 			vim.lsp.enable("verible")
 
 			-- Setup Markdown language server
-			vim.lsp.enable("vale_ls")
+			vim.lsp.enable("marksman")
 
 			-- Setup GLSL language server
 			vim.lsp.enable("glsl_analyzer")

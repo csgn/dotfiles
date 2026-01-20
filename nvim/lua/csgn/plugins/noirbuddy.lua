@@ -1,23 +1,23 @@
 return {
-    'jesseleite/nvim-noirbuddy',
-    dependencies = {
-        { 'tjdevries/colorbuddy.nvim' }
-    },
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require('noirbuddy').setup({
-            colors = {
-                background = '#000000',
-                primary = '#777777',
-                diagnostic_error = '#EC0034',
-                diagnostic_warning = '#ff7700',
-                diagnostic_info = '#d5d5d5',
-                diagnostic_hint = '#f5f5f5',
-                diff_add = '#f5f5f5',
-                diff_change = '#737373',
-                diff_delete = '#EC0034',
-            },
-        })
-    end,
+	"jesseleite/nvim-noirbuddy",
+	dependencies = {
+		{ "tjdevries/colorbuddy.nvim" },
+	},
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("noirbuddy").setup({
+			colors = {
+				background = "#000000",
+				primary = "#777777",
+				diagnostic_error = "#EC0034",
+				diagnostic_warning = "#ff7700",
+				diagnostic_info = "#d5d5d5",
+				diagnostic_hint = "#f5f5f5",
+				diff_add = "#f5f5f5",
+				diff_change = "#737373",
+				diff_delete = "#EC0034",
+			},
+		})
+	end,
 }

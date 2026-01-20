@@ -6,7 +6,7 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			markdown = { "vale" },
+			markdown = { "markdownlint" },
 			lua = { "luacheck" },
 			python = { "pylint" },
 			go = { "golangcilint" },

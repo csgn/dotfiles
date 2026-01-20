@@ -1,7 +1,7 @@
 return {
-	'tjdevries/colorbuddy.nvim',
-    lazy = true,
-    config = function()
-        require('colorbuddy').setup()
-    end,
+	"tjdevries/colorbuddy.nvim",
+	lazy = true,
+	config = function()
+		require("colorbuddy").setup()
+	end,
 }

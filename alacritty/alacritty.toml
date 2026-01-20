@@ -3,9 +3,9 @@ program = "/usr/bin/tmux"
 args = ["new-session"]
 
 [font]
-    normal = { family = "GohuFont14NerdFont", style = "Regular" }
-    bold = { family = "GohuFont14NerdFont", style = "Bold" }
-    italic = { family = "GohuFont14NerdFont", style = "Italic" }
+    normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
+    bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+    italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
     size = 16.0
     offset = { x = 0, y = 0 }
     glyph_offset = { x = 0, y = 0 }
