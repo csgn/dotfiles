@@ -1,12 +1,16 @@
 return {
 	"olimorris/codecompanion.nvim",
-	lazy = true,
-	event = { "BufReadPre", "BufNewFile" },
+	lazy = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-treesitter/nvim-treesitter",
 	},
 	config = function()
+		vim.keymap.set({ "n", "v" }, "<leader>a", "", { desc = "AI" })
+		vim.keymap.set("n", "<leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "Open CodeCompanion Chat" })
+		vim.keymap.set("n", "<leader>ai", "<cmd>CodeCompanion<cr>", { desc = "Inline CodeCompanion" })
+		vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionActions<cr>", { desc = "CodeCompanion Actions" })
+
 		require("codecompanion").setup({
 			display = {
 				chat = {
@@ -36,26 +40,6 @@ return {
 					adapter = "ollama",
 				},
 			},
-			adapters = {
-				ollama = function()
-					return require("codecompanion.adapters").extend("ollama", {
-						schema = {
-							model = {
-								default = "qwen2.5-coder:7b",
-							},
-						},
-					})
-				end,
-			},
-			vim.keymap.set({ "n", "v" }, "<leader>a", "", { desc = "AI" }),
-			vim.keymap.set(
-				"n",
-				"<leader>ac",
-				"<cmd>CodeCompanionChat Toggle<cr>",
-				{ desc = "Open CodeCompanion Chat" }
-			),
-			vim.keymap.set("n", "<leader>ai", "<cmd>CodeCompanion<cr>", { desc = "Inline CodeCompanion" }),
-			vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionActions<cr>", { desc = "CodeCompanion Actions" }),
 		})
 	end,
 }

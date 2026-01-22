@@ -20,8 +20,8 @@ return {
 				completion = cmp.config.window.bordered({
 					border = "rounded",
 					scrollbar = false,
-					col_offset = -999,
-					side_padding = 0,
+					--col_offset = -999,
+					--side_padding = 0,
 					winhighlight = table.concat({
 						"Normal:NormalFloat",
 						"NormalFloat:NormalFloat",
@@ -38,7 +38,7 @@ return {
 				documentation = cmp.config.window.bordered({
 					border = "rounded",
 					scrollbar = false,
-					side_padding = 0,
+					--side_padding = 0,
 				}),
 			},
 			mapping = {

@@ -6,7 +6,7 @@ args = ["new-session"]
     normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
     bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
     italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
-    size = 16.0
+    size = 12.0
     offset = { x = 0, y = 0 }
     glyph_offset = { x = 0, y = 0 }
 
