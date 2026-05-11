@@ -1,0 +1,26 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+if [ -n "$TMUX" ]; then
+    fastfetch
+fi
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias v=nvim
+alias vv=nvim
+alias vim=nvim
+alias vi=nvim
+
+export LUA_PATH="/usr/bin/lua5.1"
+export NVM_DIR="$HOME/.config/nvm"
+export EDITOR=nvim
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+PS1='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\[\e[1m\]\u\[\e[0m\] \[\e[38;5;245m\][\[\e[38;5;211;1;2;3m\]\w\[\e[0;38;5;245m\]]\[\e[38;5;228;1;2;3m\]${PS1_CMD1}\[\e[0m\] \\$ '
