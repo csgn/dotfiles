@@ -15,6 +15,7 @@ alias v=nvim
 alias vv=nvim
 alias vim=nvim
 alias vi=nvim
+alias lg=lazygit
 
 export LUA_PATH="/usr/bin/lua5.1"
 export NVM_DIR="$HOME/.config/nvm"
