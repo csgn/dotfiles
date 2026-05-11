@@ -1,0 +1,18 @@
+[terminal.shell]
+program = "/usr/bin/tmux"
+args = ["new-session"]
+
+[font]
+    normal = { family = "JetBrainsMonoNerdFont", style = "Regular" }
+    bold = { family = "JetBrainsMonoNerdFont", style = "Bold" }
+    italic = { family = "JetBrainsMonoNerdFont", style = "Italic" }
+    size = 13
+    offset = { x = 0, y = 0 }
+    glyph_offset = { x = 0, y = 0 }
+
+[general]
+import = [
+    "./themes/themes/hyper.toml"
+]
+
+[terminal]
