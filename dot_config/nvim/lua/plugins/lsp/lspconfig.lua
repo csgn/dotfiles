@@ -39,8 +39,6 @@ return {
 			})
 			vim.lsp.enable("lua_ls")
 
-
-
 			-- Setup C/C++ language server
 			--vim.lsp.enable("clangd")
 
@@ -79,13 +77,6 @@ return {
 
 			-- Setup GLSL language server
 			--vim.lsp.enable("glsl_analyzer")
-
-			-- Setup Gdscript language server
-			-- vim.lsp.config("gdscript", {
-			-- 	name = "godot",
-			-- 	cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
-			-- })
-			-- vim.lsp.enable("gdscript")
 		else
 			-- legacy config here
 			vim.print("Legacy lspconfig!")

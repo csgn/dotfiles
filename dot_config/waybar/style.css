@@ -1,0 +1,60 @@
+* {
+  font-family: JetBrainsMono, monospace;
+  font-size: 24px;
+}
+
+window#waybar {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.modules-left {
+}
+
+.modules-center {
+}
+
+.modules-right {
+}
+
+#workspaces button {
+  padding: 0 16px;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  background-color: #89b4fa;
+  color: #1e1e2e;
+}
+
+#clock, #battery, #network, #idle_inhibitor, #custom-language, #power-profiles-daemon {
+  padding: 0 10px;
+}
+
+#idle_inhibitor.activated {
+	color: #00ff00;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.charging {
+    color: #f9e2af;
+}
+
+#battery.warning:not(.charging) {
+    color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+}
+
+#network.wifi {
+    color: #a6e3a1;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+}
