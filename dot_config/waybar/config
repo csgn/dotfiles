@@ -3,8 +3,8 @@
 	"position": "bottom",
 	"height": 48,
 	"modules-left": [
-		"hyprland/workspaces",
-		"tray"
+		"hyprland/workspaces"
+		//"tray"
 	],
 	"modules-center": [
 		"hyprland/window"

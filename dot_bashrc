@@ -24,4 +24,4 @@ export EDITOR=nvim
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PS1='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\[\e[1m\]\u\[\e[0m\] \[\e[38;5;245m\][\[\e[38;5;211;1;2;3m\]\w\[\e[0;38;5;245m\]]\[\e[38;5;228;1;2;3m\]${PS1_CMD1}\[\e[0m\] \\$ '
+PS1='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\[\e[1m\]$(if [ "$EUID" -eq 0 ]; then echo "root"; fi)\[\e[0m\] \[\e[38;5;245m\][\[\e[38;5;211;1;2;3m\]\w\[\e[0;38;5;245m\]]\[\e[38;5;228;1;2;3m\]${PS1_CMD1}\[\e[0m\] \\$ '
