@@ -1,0 +1,68 @@
+{
+    "appearance": {
+        "padding": {
+            "scale": 1
+        },
+        "rounding": {
+            "scale": 0.33561502243322205
+        },
+        "spacing": {
+            "scale": 0.4102996534416826
+        },
+        "transparency": {
+            "base": 0.9497730592654424,
+            "enabled": true,
+            "layers": 0.3671809787145242
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "enabled": true,
+            "position": "top-right"
+        },
+        "enabled": true,
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": false
+        },
+        "clock": {
+            "background": false
+        },
+        "popouts": {
+            "activeWindow": true,
+            "statusIcons": true,
+            "tray": true
+        },
+        "status": {
+            "showAudio": true,
+            "showKbLayout": true,
+            "showLockStatus": false,
+            "showMicrophone": true
+        },
+        "tray": {
+            "background": true,
+            "compact": false,
+            "recolour": false
+        },
+        "workspaces": {
+            "maxWindowIcons": 5,
+            "occupiedBg": false
+        }
+    },
+    "border": {
+        "rounding": 8,
+        "thickness": 10
+    },
+    "launcher": {
+        "hiddenApps": [
+            "bssh",
+            "bvnc",
+            "avahi-discover",
+            "cmake-gui"
+        ],
+        "vimKeybinds": true
+    }
+}
